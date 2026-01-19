@@ -1,0 +1,278 @@
+/* Styles for body */
+body {
+    background-color: #470510;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading style */
+h1 {
+    color: white;
+    text-align: center;
+    text-decoration-line: underline;
+}
+h2 {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+/* Paragraph style */
+p {
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 50px;
+}
+
+/* Top and Bottom devider bars */
+.bar {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Fixed navbar */
+.navbar {
+    background-color: #070000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-sizing: border-box;
+    transition: top 0.4s; /* Smooth hide effect */
+}
+
+/* Menu button for small screen */
+.menu {
+    align-self: flex-end;
+    background-color: #470510;
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    width: 53px;
+    height: 53px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 101;
+    display: block;
+    margin-right: 10px;
+}
+
+/* Hidden nav links (shown with JS) */
+.navlinks {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #070000;
+    padding: 10px 0;
+}
+
+/* Navigation link style */
+.navlinks a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    background-color: #470510;
+    border-radius: 5px;
+    margin: 5px 10px;
+    transition: background 0.3s;
+}
+.navlinks a:hover {
+    background-color: #8b112a;
+}
+.navlinks.show {
+    display: flex; /* JS toggle to show links */
+}
+
+/* Info about silksong */
+.teamcherry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.teamcherryimg {
+    width: 90%;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+/* Announcement about silksongs release */
+.announcement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.announcementimg {
+    width: 90%;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+/* Silksong trailer container */
+.trailer {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.trailer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Gallerys banner */
+.bannergallery {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 70px;
+}
+
+/* Scroll */
+.scroll {
+    background-color: #390808;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    scrollbar-color: white #390808;
+}
+
+.scroll img {
+    height: 200px;
+    width: auto;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    object-fit: contain;
+}
+
+/* Displaying team members */
+.teammembers {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.teammember {
+    width: 90%;
+    margin-bottom: 20px;
+}
+.teammember img {
+    align-items: center;
+    width: 80%;
+    border-radius: 10%;
+    border: 7px solid #300303;
+}
+.cherry {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+}
+
+/* Footer */
+footer {
+    background-color: #070000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+footer a {
+    color: #bb3434;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Desktop version */
+@media (min-width: 768px) {
+
+    p {
+        font-size: 22px;
+        margin: 50px;
+    }
+
+    .bar {
+        width: 30%;
+        margin: auto;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu {
+        display: none;
+    }
+    .navlinks {
+        display: flex;
+        flex-direction: row;
+        background: none;
+        padding: 0;
+        width: auto;
+    }
+    .navlinks a {
+        margin: 0 10px;
+    }
+
+    .teamcherry {
+        flex-direction: row;
+        margin: 30px;
+    }
+    .announcement {
+        flex-direction: row;
+        margin: 30px;
+    }
+
+    .bannergallery {
+        margin-top: 20px;
+    }
+    .scroll img {
+        height: 350px;
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+
+    .teammembers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .teammember {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    .teammember img {
+        width: 80%;
+        border-radius: 10%;
+        border: 5px solid #070000;
+    }
+}
