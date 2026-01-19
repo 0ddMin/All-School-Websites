@@ -1,0 +1,197 @@
+/* Body styling */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    background-color: #eae0c3;
+}
+
+/* Header styling */
+header {
+    background-color: #e1d2aa;
+    color: #24070c;
+    padding: 15px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+/* Images */
+img {
+    width: 95%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+p {
+    color: #24070c
+}
+
+/* Navbar */
+.navbar {
+    background-color: #cbb482;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-sizing: border-box;
+    float: none;
+    position: absolute;
+    position: fixed;
+    transition: top 0.4s; /* Smooth hide/show effect */
+}
+
+/* Navigation link styles */
+.navlinks a {
+    color: #24070c;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.navlinks a:hover {
+    color: #5c1219;
+    text-decoration: underline;
+}
+
+/* All different heading sizes */
+h1 {
+    font-size: 70px;
+    color: #24070c
+}
+h2 {
+    font-size: 35px;
+    color: #24070c
+}
+h3 {
+    font-size: 25px;
+    text-align: center;
+    color: #24070c
+}
+
+/* Top Box */
+.box {
+    background-color: #e1d0aa;
+    width: 270px;
+    padding: 30px;
+    margin: 20px;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+}
+/* Train pic */
+.juna {
+    width: 100%;
+    margin-top: -50px;
+    z-index: 1;
+}
+
+/* Link styling */
+a {
+    color: #5c1219;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Galary images */
+.gallery img {
+    border-radius: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallerytxt {
+    padding: 5px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    background-color: #e1d2aa;
+}
+
+/* Footer */
+footer {
+    background-color: #e1d0aa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+footer a {
+    color: #5c1219;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Desktop version */
+@media (min-width: 768px) {
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+        background-image: url('images/lumimetsä.webp');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .content {
+        max-width: 1050px;
+        margin: auto;
+        padding: 20px;
+        background: #eae0c3;
+    }
+
+    .galleryall {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .gallery {
+        width: 49%;
+        box-sizing: border-box;
+    }
+
+    .gallerytxt {
+        padding: 5px;
+        background-color: #e1d2aa;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    p {
+        font-size: 22px;
+        margin: 50px;
+    }
+
+    .box {
+        width: 600px;
+    }
+    .juna {
+        width: 80%;
+        margin-top: -100px;
+        z-index: 1;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu {
+        display: none;
+    }
+    .navlinks {
+        display: flex;
+        flex-direction: row;
+        background: none;
+        padding: 0;
+        width: auto;
+    }
+    .navlinks a {
+        margin: 0 10px;
+    }
+}
